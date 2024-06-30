@@ -5,6 +5,17 @@ import { AdminManageCandidateComponent } from "../pages/admin-manage-candidate/a
 import { AdminManageJobsComponent } from "../pages/admin-manage-jobs/admin-manage-jobs.component";
 import { AdminProfileComponent } from "../pages/admin-profile/admin-profile.component";
 import { MaindemoComponent } from "../pages/maindemo/maindemo.component";
+import { JobListComponent } from "../pages/job-list/job-list.component";
+import { JobsGridComponent } from "../pages/jobs-grid/jobs-grid.component";
+import { JobListTwoComponent } from "../pages/job-list-two/job-list-two.component";
+import { JobsGridTwoComponent } from "../pages/jobs-grid-two/jobs-grid-two.component";
+import { JobsGridFourComponent } from "../pages/jobs-grid-four/jobs-grid-four.component";
+import { JobsWithoutFilterComponent } from "../pages/jobs-without-filter/jobs-without-filter.component";
+import { OverviewComponent } from "../pages/overview/overview.component";
+import { PricingComponent } from "../pages/pricing/pricing.component";
+import { TeamComponent } from "../pages/team/team.component";
+import { ContactUsComponent } from "../pages/contact-us/contact-us.component";
+import { AboutUsComponent } from "../pages/about-us/about-us.component";
 
 export const ADMIN_ROUTES: Routes = [
   { path: '', component: MaindemoComponent },
@@ -13,4 +24,15 @@ export const ADMIN_ROUTES: Routes = [
   { path: 'admin-manage-jobs', component: AdminManageJobsComponent },
   { path: 'profile', component: AdminProfileComponent },
   { path: 'admin-dashboard', component: DashboardComponent },
+  { path: 'job-list', component: JobListComponent },
+  { path: 'job-list-two', component: JobListTwoComponent },
+  { path: 'jobs-grid', component: JobsGridComponent },
+  { path: 'jobs-grid-two', component: JobsGridTwoComponent },
+  { path: 'jobs-grid-four', component: JobsGridFourComponent },
+  { path: 'jobs-without-filter', component: JobsWithoutFilterComponent },
+  { path: 'overview', component: OverviewComponent },
+  { path: 'pricing', component: PricingComponent },
+  { path: 'team', component: TeamComponent },
+  { path: 'contact-us', component: ContactUsComponent },
+  { path: 'about-us', component: AboutUsComponent },
 ]
