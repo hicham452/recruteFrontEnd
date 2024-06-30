@@ -14,6 +14,7 @@ import {
   ApexGrid
 } from "ng-apexcharts";
 import { NavbarComponent } from '../../layout/navbar/navbar.component';
+import { SidebarComponent } from '../../layout/sidebar/sidebar.component';
 
 export type CustomApexChartSeries = {
   name: string;
@@ -43,7 +44,8 @@ export type ChartOptions = {
     FooterComponent,
     CommonModule,
     NgApexchartsModule,
-    NavbarComponent
+    NavbarComponent,
+    SidebarComponent
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'

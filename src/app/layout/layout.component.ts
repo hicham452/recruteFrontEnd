@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ThemeService } from '../ThemeService/theme.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-layout',
@@ -9,6 +11,8 @@ import { ThemeService } from '../ThemeService/theme.service';
   imports: [
     SidebarComponent,
     RouterOutlet,
+    NavbarComponent,
+    FooterComponent
   ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'
