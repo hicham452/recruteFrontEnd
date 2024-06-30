@@ -3,6 +3,7 @@ import { FooterComponent } from '../../layout/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from '../../layout/navbar/navbar.component';
+import { SidebarComponent } from '../../layout/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-admin-manage-jobs',
@@ -10,7 +11,8 @@ import { NavbarComponent } from '../../layout/navbar/navbar.component';
   imports: [
     FooterComponent,
     CommonModule,
-    NavbarComponent
+    NavbarComponent,
+    SidebarComponent
   ],
   templateUrl: './admin-manage-jobs.component.html',
   styleUrl: './admin-manage-jobs.component.scss'

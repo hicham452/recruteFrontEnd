@@ -3,6 +3,7 @@ import { FooterComponent } from '../../layout/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from '../../layout/navbar/navbar.component';
+import { SidebarComponent } from '../../layout/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-admin-manage-candidate',
@@ -11,7 +12,8 @@ import { NavbarComponent } from '../../layout/navbar/navbar.component';
     FooterComponent,
     CommonModule,
     NgbModule,
-    NavbarComponent
+    NavbarComponent,
+    SidebarComponent
   ],
   templateUrl: './admin-manage-candidate.component.html',
   styleUrl: './admin-manage-candidate.component.scss'

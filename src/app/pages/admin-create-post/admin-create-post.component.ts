@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FooterComponent } from '../../layout/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../../layout/navbar/navbar.component';
+import { SidebarComponent } from '../../layout/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-admin-create-post',
@@ -9,7 +10,8 @@ import { NavbarComponent } from '../../layout/navbar/navbar.component';
   imports: [
     FooterComponent,
     CommonModule,
-    NavbarComponent
+    NavbarComponent,
+    SidebarComponent
   ],
   templateUrl: './admin-create-post.component.html',
   styleUrl: './admin-create-post.component.scss'
