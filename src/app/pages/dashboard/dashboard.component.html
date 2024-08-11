@@ -2,8 +2,8 @@
 <app-sidebar></app-sidebar>
 <div class="position-relative">
   <div class="admin-page-wrapper">
-    <h5>Hello, Michelle Yoder 👋</h5>
-    <p class="text-muted font-15">Admin & Founder</p>
+    <h5>Bonjour, Admin Ressourcial 👋</h5>
+    <p class="text-muted font-15">Profil Admin</p>
 
     <div class="row g-4">
       <div class="col-xl-3 col-md-6">
@@ -16,7 +16,7 @@
             </div>
             <div>
               <h5 class="font-17">258</h5>
-              <p class="mb-0 font-15 text-muted">Posted Job</p>
+              <p class="mb-0 font-15 text-muted">Offre d emploi</p>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@
             </div>
             <div>
               <h5 class="font-17">16</h5>
-              <p class="mb-0 font-15 text-muted">Shortlisted</p>
+              <p class="mb-0 font-15 text-muted">Entreprise(s)</p>
             </div>
           </div>
         </div>
@@ -45,8 +45,8 @@
               </div>
             </div>
             <div>
-              <h5 class="font-17">1.2k</h5>
-              <p class="mb-0 font-15 text-muted">Application</p>
+              <h5 class="font-17">350</h5>
+              <p class="mb-0 font-15 text-muted">Candidature(s)</p>
             </div>
           </div>
         </div>
@@ -60,8 +60,8 @@
               </div>
             </div>
             <div>
-              <h5 class="font-17">3.5k</h5>
-              <p class="mb-0 font-15 text-muted">Save Candidate</p>
+              <h5 class="font-17">1.5k</h5>
+              <p class="mb-0 font-15 text-muted">Candidate(s)</p>
             </div>
           </div>
         </div>
@@ -72,16 +72,15 @@
       <div class="col-xxl-9 col-xl-8">
         <div class="card" [ngClass]="{ 'border': darkTheme, 'border-0 shadow-md': !darkTheme }">
           <div class="card-header border-0 pb-2 d-flex align-items-center">
-            <h6 class="font-15 mb-0 flex-grow-1">Job Overview</h6>
+            <h6 class="font-15 mb-0 flex-grow-1">Vue d'ensemble</h6>
             <div class="dropdown flex-shrink-0">
               <button class="btn btn-link btn-sm text-muted bg-light border" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Current Month <i class="bi bi-caret-down ms-1 align-middle"></i>
+                Mois encours <i class="bi bi-caret-down ms-1 align-middle"></i>
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Last Month</a></li>
-                <li><a class="dropdown-item" href="#">Last 6 Months</a></li>
-                <li><a class="dropdown-item" href="#">Last Years</a></li>
+                <li><a class="dropdown-item" href="#">Dernier 6 mois</a></li>
+                <li><a class="dropdown-item" href="#">Derniere année</a></li>
               </ul>
             </div>
           </div>
@@ -96,10 +95,10 @@
         </div>
         <div class="card" [ngClass]="{ 'border': darkTheme, 'border-0 shadow-md': !darkTheme }">
           <div class="card-header border-0 pb-2 d-flex align-items-center">
-            <h6 class="font-15 mb-0 flex-grow-1">Job Overview</h6>
+            <h6 class="font-15 mb-0 flex-grow-1">liste des Offres</h6>
             <div class="flex-shrink-0">
               <button class="btn btn-sm btn-primary" type="button">
-                View More <i class="bi bi-arrow-right"></i>
+                Plus <i class="bi bi-arrow-right"></i>
               </button>
             </div>
           </div>
@@ -109,10 +108,10 @@
                 <thead>
                   <tr>
                     <th (click)="sortByColumn"> # </th>
-                    <th (click)="sortByColumn"> Company Name </th>
-                    <th (click)="sortByColumn"> Job Role </th>
-                    <th (click)="sortByColumn"> Status </th>
-                    <th (click)="sortByColumn"> Applied Date </th>
+                    <th (click)="sortByColumn"> Entreprise</th>
+                    <th (click)="sortByColumn"> Poste</th>
+                    <th (click)="sortByColumn"> Statut </th>
+                    <th (click)="sortByColumn"> Date</th>
                   </tr>
                 </thead>
                 <tbody x-ref="tbody">
@@ -125,8 +124,8 @@
                       </a>
                     </td>
                     <td>Web Designer</td>
-                    <td><span class="badge bg-success-subtle text-success">Appoved</span></td>
-                    <td>24 Feb, 2024</td>
+                    <td><span class="badge bg-success-subtle text-success">Approuvé</span></td>
+                    <td>24 Fév, 2024</td>
                   </tr>
                   <tr>
                     <td>2</td>
@@ -136,9 +135,9 @@
                         <h6 class="mb-0 font-15">ObjectThemes</h6>
                       </a>
                     </td>
-                    <td>eCommerce Executive</td>
-                    <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
-                    <td>17 Feb, 2024</td>
+                    <td>Responsable eCommerce</td>
+                    <td><span class="badge bg-warning-subtle text-warning">En attente</span></td>
+                    <td>17 Fév, 2024</td>
                   </tr>
                   <tr>
                     <td>3</td>
@@ -148,9 +147,9 @@
                         <h6 class="mb-0 font-15">Ctrl Solution</h6>
                       </a>
                     </td>
-                    <td>Marketing Executive</td>
-                    <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
-                    <td>15 Feb, 2024</td>
+                    <td>Responsable Marketing</td>
+                    <td><span class="badge bg-warning-subtle text-warning">En attente</span></td>
+                    <td>15 Fév, 2024</td>
                   </tr>
                   <tr>
                     <td>4</td>
@@ -160,9 +159,9 @@
                         <h6 class="mb-0 font-15">Pixel Soft</h6>
                       </a>
                     </td>
-                    <td>Flutter Developer</td>
-                    <td><span class="badge bg-success-subtle text-success">Appoved</span></td>
-                    <td>09 Feb, 2024</td>
+                    <td>Développeur Flutter</td>
+                    <td><span class="badge bg-success-subtle text-success">Approuvé</span></td>
+                    <td>09 Fév, 2024</td>
                   </tr>
                   <tr>
                     <td>5</td>
@@ -172,8 +171,8 @@
                         <h6 class="mb-0 font-15">Shopify</h6>
                       </a>
                     </td>
-                    <td>Sr. Content Writer</td>
-                    <td><span class="badge bg-success-subtle text-success">Appoved</span></td>
+                    <td>Rédacteur senior</td>
+                    <td><span class="badge bg-success-subtle text-success">Approuvé</span></td>
                     <td>28 Jan, 2024</td>
                   </tr>
                   <tr>
@@ -184,8 +183,8 @@
                         <h6 class="mb-0 font-15">Telegram</h6>
                       </a>
                     </td>
-                    <td>Team Leader</td>
-                    <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
+                    <td>Chef d'équipe</td>
+                    <td><span class="badge bg-warning-subtle text-warning">En attente</span></td>
                     <td>23 Jan, 2024</td>
                   </tr>
                 </tbody>
@@ -193,14 +192,14 @@
             </div>
             <div class="row align-items-center">
               <div class="col-lg-6">
-                <p class="mb-0 text-muted text-center text-lg-start font-14 mb-3 mb-lg-0">Showing <b>36</b> of
-                  <b>497</b> Jobs</p>
+                <p class="mb-0 text-muted text-center text-lg-start font-14 mb-3 mb-lg-0">Affichage de <b>36</b> sur
+                  <b>497</b> emplois</p>
               </div>
               <div class="col-lg-6">
-                <nav aria-label="Page navigation example">
+                <nav aria-label="Exemple de navigation par pages">
                   <ul class="pagination justify-content-center justify-content-lg-end mb-0 pagination-sm">
                     <li class="page-item">
-                      <a class="page-link square-xs" href="#" aria-label="Previous">
+                      <a class="page-link square-xs" href="#" aria-label="Précédent">
                         <i class="bi bi-chevron-left"></i>
                       </a>
                     </li>
@@ -210,7 +209,7 @@
                     <li class="page-item"><a class="page-link square-xs" href="#">4</a></li>
                     <li class="page-item"><a class="page-link square-xs" href="#">5</a></li>
                     <li class="page-item">
-                      <a class="page-link square-xs" href="#" aria-label="Next">
+                      <a class="page-link square-xs" href="#" aria-label="Suivant">
                         <i class="bi bi-chevron-right"></i>
                       </a>
                     </li>
@@ -219,12 +218,13 @@
               </div>
             </div>
           </div>
+          
         </div>
       </div>
       <div class="col-xxl-3 col-xl-4">
         <div class="card" [ngClass]="{ 'border': darkTheme, 'border-0 shadow-md': !darkTheme }">
           <div class="card-header border-0 pb-2">
-            <h6 class="font-15 mb-0">Recommended Jobs</h6>
+            <h6 class="font-15 mb-0">Derniers Emplois</h6>
           </div>
           <div class="card-body vstack gap-3">
             <div class="card border-0 bg-body-tertiary bg-opacity-75 mb-0">
@@ -234,8 +234,8 @@
                 <h6 class="font-14">UI/UX Designer</h6>
                 <p class="font-12 text-muted"><a href="#!" class="text-reset">ObjectThemes</a></p>
                 <div class="hstack gap-2 flex-wrap mb-0 mt-4">
-                  <span class="badge bg-secondary-subtle text-secondary">Freelancer</span>
-                  <span class="badge bg-dark-subtle text-body">Remote</span>
+                  <span class="badge bg-secondary-subtle text-secondary">Freelance</span>
+                  <span class="badge bg-dark-subtle text-body">À distance</span>
                 </div>
               </div>
             </div>
@@ -243,11 +243,11 @@
               <div class="card-body">
                 <button type="button" class="btn btn-danger btn-soft btn-bookmark float-end" data-bs-toggle="button"><i
                     class="bi bi-bookmark-star"></i></button>
-                <h6 class="font-14">Recruitment Executive</h6>
+                <h6 class="font-14">Responsable du recrutement</h6>
                 <p class="font-12 text-muted"><a href="#!" class="text-reset">Telegram</a></p>
                 <div class="hstack gap-2 flex-wrap mt-4">
-                  <span class="badge bg-danger-subtle text-danger">Part Time</span>
-                  <span class="badge bg-info-subtle text-info">Internship</span>
+                  <span class="badge bg-danger-subtle text-danger">Temps partiel</span>
+                  <span class="badge bg-info-subtle text-info">Stage</span>
                 </div>
               </div>
             </div>
@@ -255,11 +255,11 @@
               <div class="card-body">
                 <button type="button" class="btn btn-danger btn-soft btn-bookmark float-end" data-bs-toggle="button"><i
                     class="bi bi-bookmark-star"></i></button>
-                <h6 class="font-14">eCommerce Executive</h6>
+                <h6 class="font-14">Responsable eCommerce</h6>
                 <p class="font-12 text-muted"><a href="#!" class="text-reset">Amezon</a></p>
                 <div class="hstack gap-2 flex-wrap mt-4">
-                  <span class="badge bg-dark-subtle text-body">Remote</span>
-                  <span class="badge bg-success-subtle text-success">Full Time</span>
+                  <span class="badge bg-dark-subtle text-body">À distance</span>
+                  <span class="badge bg-success-subtle text-success">Temps plein</span>
                   <span class="badge bg-danger-subtle text-danger">Urgent</span>
                 </div>
               </div>
@@ -268,11 +268,11 @@
               <div class="card-body">
                 <button type="button" class="btn btn-danger btn-soft btn-bookmark float-end" data-bs-toggle="button"><i
                     class="bi bi-bookmark-star"></i></button>
-                <h6 class="font-14">Product Designer</h6>
+                <h6 class="font-14">Designer de produits</h6>
                 <p class="font-12 text-muted"><a href="#!" class="text-reset">Shopify</a></p>
                 <div class="hstack gap-2 flex-wrap mt-4">
-                  <span class="badge bg-success-subtle text-success">Full Time</span>
-                  <span class="badge bg-info-subtle text-info">Internship</span>
+                  <span class="badge bg-success-subtle text-success">Temps plein</span>
+                  <span class="badge bg-info-subtle text-info">Stage</span>
                 </div>
               </div>
             </div>
@@ -280,10 +280,10 @@
               <div class="card-body">
                 <button type="button" class="btn btn-danger btn-soft btn-bookmark float-end" data-bs-toggle="button"><i
                     class="bi bi-bookmark-star"></i></button>
-                <h6 class="font-14">Digital Marketing</h6>
+                <h6 class="font-14">Marketing digital</h6>
                 <p class="font-12 text-muted"><a href="#!" class="text-reset">ObjectThemes</a></p>
                 <div class="hstack gap-2 flex-wrap mb-0 mt-4">
-                  <span class="badge bg-success-subtle text-success">Full Time</span>
+                  <span class="badge bg-success-subtle text-success">Temps plein</span>
                 </div>
               </div>
             </div>
@@ -294,8 +294,8 @@
                 <h6 class="font-14">UI/UX Designer</h6>
                 <p class="font-12 text-muted"><a href="#!" class="text-reset">ObjectThemes</a></p>
                 <div class="hstack gap-2 flex-wrap mb-0 mt-4">
-                  <span class="badge bg-secondary-subtle text-secondary">Freelancer</span>
-                  <span class="badge bg-dark-subtle text-body">Remote</span>
+                  <span class="badge bg-secondary-subtle text-secondary">Freelance</span>
+                  <span class="badge bg-dark-subtle text-body">À distance</span>
                 </div>
               </div>
             </div>
@@ -303,17 +303,18 @@
               <div class="card-body">
                 <button type="button" class="btn btn-danger btn-soft btn-bookmark float-end" data-bs-toggle="button"><i
                     class="bi bi-bookmark-star"></i></button>
-                <h6 class="font-14">React Development</h6>
+                <h6 class="font-14">Développement React</h6>
                 <p class="font-12 text-muted"><a href="#!" class="text-reset">ObjectThemes</a></p>
                 <div class="hstack gap-2 flex-wrap mb-0 mt-4">
-                  <span class="badge bg-info-subtle text-info">Internship</span>
-                  <span class="badge bg-secondary-subtle text-secondary">Freelancer</span>
+                  <span class="badge bg-info-subtle text-info">Stage</span>
+                  <span class="badge bg-secondary-subtle text-secondary">Freelance</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   </div>
 </div>

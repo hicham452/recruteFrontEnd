@@ -31,14 +31,16 @@ export class JobSorter {
   sortBy: string = "";
   sortAsc: boolean = false;
   data: any[] = [
-    { 'Title': 'IT Help Desk Support', 'Applications': '24', 'Date Expired': '06 April, 2024', 'Status': '<span class="badge bg-success-subtle text-success">Active</span>', 'Link': '#!', 'ApplicationsLink': '#!', 'ImageSrc': 'assets/images/company_logo/linkedin.png', 'Location': 'Mexico', 'Salary': '$165 - $182' },
-    { 'Title': 'Full Stack Developer', 'Applications': '45', 'Date Expired': '29 Feb, 2024', 'Status': '<span class="badge bg-success-subtle text-success">Active</span>', 'Link': '#!', 'ApplicationsLink': '#!', 'ImageSrc': 'assets/images/company_logo/flutter.jpg', 'Location': 'California', 'Salary': '$122 - $125' },
-    { 'Title': 'React Developer', 'Applications': '126', 'Date Expired': '24 Feb, 2024', 'Status': '<span class="badge bg-danger-subtle text-danger">UnActive</span>', 'Link': '#!', 'ApplicationsLink': '#!', 'ImageSrc': 'assets/images/company_logo/react.jpg', 'Location': 'Bermuda', 'Salary': '$80 - $130' },
-    { 'Title': 'Data Center Specialist', 'Applications': '78', 'Date Expired': '17 Feb, 2024', 'Status': '<span class="badge bg-success-subtle text-success">Active</span>', 'Link': '#!', 'ApplicationsLink': '#!', 'ImageSrc': 'assets/images/company_logo/vue.jpg', 'Location': 'Bermuda', 'Salary': '$80 - $130' },
-    { 'Title': 'Product Design Manager', 'Applications': '147', 'Date Expired': '08 Feb, 2024', 'Status': '<span class="badge bg-success-subtle text-success">Active</span>', 'Link': '#!', 'ApplicationsLink': '#!', 'ImageSrc': 'assets/images/company_logo/flask.jpg', 'Location': 'Germany', 'Salary': '$149 - $179' },
-    { 'Title': 'Marketing Executive', 'Applications': '204', 'Date Expired': '08 Feb, 2024', 'Status': '<span class="badge bg-success-subtle text-success">Active</span>', 'Link': '#!', 'ApplicationsLink': '#!', 'ImageSrc': 'assets/images/company_logo/shopify.jpg', 'Location': 'Saudi Arabia', 'Salary': '$253 - $412' },
-    { 'Title': 'Designer Head', 'Applications': '145', 'Date Expired': '26 Jan, 2024', 'Status': '<span class="badge bg-danger-subtle text-danger">Unactive</span>', 'Link': '#!', 'ApplicationsLink': '#!', 'ImageSrc': 'assets/images/company_logo/flutter.jpg', 'Location': 'Romania', 'Salary': '$80 - $130' }
-  ];
+    { 'Title': 'Support IT Help Desk', 'Applications': '24', 'Date Expired': '06 Avril, 2024', 'Status': '<span class="badge bg-success-subtle text-success">Actif</span>', 'Link': '#!', 'ApplicationsLink': '#!', 'ImageSrc': 'assets/images/company_logo/linkedin.png', 'Location': 'Casablanca', 'Salary': '1650 DH - 1820 DH' },
+    { 'Title': 'Développeur Full Stack', 'Applications': '45', 'Date Expired': '29 Février, 2024', 'Status': '<span class="badge bg-success-subtle text-success">Actif</span>', 'Link': '#!', 'ApplicationsLink': '#!', 'ImageSrc': 'assets/images/company_logo/flutter.jpg', 'Location': 'Marrakech', 'Salary': '1220 DH - 1250 DH' },
+    { 'Title': 'Développeur React', 'Applications': '126', 'Date Expired': '24 Février, 2024', 'Status': '<span class="badge bg-danger-subtle text-danger">Inactif</span>', 'Link': '#!', 'ApplicationsLink': '#!', 'ImageSrc': 'assets/images/company_logo/react.jpg', 'Location': 'Rabat', 'Salary': '800 DH - 1300 DH' },
+    { 'Title': 'Spécialiste Data Center', 'Applications': '78', 'Date Expired': '17 Février, 2024', 'Status': '<span class="badge bg-success-subtle text-success">Actif</span>', 'Link': '#!', 'ApplicationsLink': '#!', 'ImageSrc': 'assets/images/company_logo/vue.jpg', 'Location': 'Tanger', 'Salary': '800 DH - 1300 DH' },
+    { 'Title': 'Responsable Design Produit', 'Applications': '147', 'Date Expired': '08 Février, 2024', 'Status': '<span class="badge bg-success-subtle text-success">Actif</span>', 'Link': '#!', 'ApplicationsLink': '#!', 'ImageSrc': 'assets/images/company_logo/flask.jpg', 'Location': 'Fès', 'Salary': '1490 DH - 1790 DH' },
+    { 'Title': 'Responsable Marketing', 'Applications': '204', 'Date Expired': '08 Février, 2024', 'Status': '<span class="badge bg-success-subtle text-success">Actif</span>', 'Link': '#!', 'ApplicationsLink': '#!', 'ImageSrc': 'assets/images/company_logo/shopify.jpg', 'Location': 'Agadir', 'Salary': '2530 DH - 4120 DH' },
+    { 'Title': 'Responsable Design', 'Applications': '145', 'Date Expired': '26 Janvier, 2024', 'Status': '<span class="badge bg-danger-subtle text-danger">Inactif</span>', 'Link': '#!', 'ApplicationsLink': '#!', 'ImageSrc': 'assets/images/company_logo/flutter.jpg', 'Location': 'Oujda', 'Salary': '800 DH - 1300 DH' }
+]
+
+
   sortedData: any[] = [];
 
   initialize() {

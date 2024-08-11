@@ -5,7 +5,7 @@
       <div class="col-5">
         <div class="card" [ngClass]="{ 'border': darkTheme, 'border-0 shadow-md': !darkTheme }">
                   <div class=" card-body p-4 m-2">
-          <h4 class="mb-4">Sign In</h4>
+          <h4 class="mb-4">Connexion à mon espace</h4>
 <!--           <a href="#!" class="btn btn-link border w-100 text-danger"><i class="bi bi-google me-1"></i> Continue with
             Google</a>
 
@@ -16,21 +16,21 @@
           <div>
             <form>
               <div class="mb-3">
-                <label for="userNameEmail" class="form-label font-15 fw-medium">UserName / Email</label>
-                <input type="text" class="form-control" id="userNameEmail" placeholder="Enter username / email">
+                <label for="userNameEmail" class="form-label font-15 fw-medium">Email</label>
+                <input type="text" class="form-control" id="userNameEmail" placeholder="email">
               </div>
               <div class="mb-4">
                 <label for="exampleInputPassword1" class="form-label font-15 fw-medium">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
                 <div class="text-end pt-1">
-                  <a href="#!" class="text-end text-success font-14 fw-medium">Forgot Password ?</a>
+                  <a href="#!" class="text-end text-success font-14 fw-medium">Mot de pass Oublié ?</a>
                 </div>
               </div>
-              <button type="submit" class="btn btn-secondary w-100">Sign In</button>
+              <button type="submit" class="btn btn-secondary w-100">Connexion</button>
             </form>
 
-            <p class="mb-0 text-muted font-14 mt-3 text-center">Need an account? <a routerLink="/auth-signup"
-                class="fw-medium">Sign Up</a></p>
+            <p class="mb-0 text-muted font-14 mt-3 text-center">Besoin d un compte? <a routerLink="/auth-signup"
+                class="fw-medium">Creer mon espace</a></p>
           </div>
         </div>
       </div>

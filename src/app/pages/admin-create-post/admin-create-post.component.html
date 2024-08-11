@@ -1,96 +1,130 @@
 <app-sidebar></app-sidebar>
 <div class="position-relative">
   <div class="admin-page-wrapper">
-      <h5 class="mb-4">Create a New Job Listing!</h5>
+      <h5 class="mb-4">Créer une Nouvelle Offre d'Emploi !</h5>
 
       <div class="row">
           <div class="col-lg-12">
               <div class="card" [ngClass]="{ 'border': darkTheme, 'border-0 shadow-md': !darkTheme }">
                   <div class="card-header border-0 pb-2 d-flex align-items-center">
-                      <h6 class="font-16 mb-0 flex-grow-1">Create a Post</h6>
+                      <h6 class="font-16 mb-0 flex-grow-1">Créer un Post</h6>
                   </div>
                   <div class="card-body">
-                      <form action="#!">
+                      <form [formGroup]="form" (ngSubmit)="onSubmit()">
                           <div class="row g-3">
                               <div class="col-lg-12">
                                   <div>
-                                      <label for="jobTitle" class="form-label font-15 fw-medium">Job Title</label>
-                                      <input type="text" class="form-control" id="jobTitle" placeholder="Job title">
+                                      <label for="jobTitle" class="form-label font-15 fw-medium">Titre du Poste</label>
+                                      <input type="text" 
+                                            class="form-control" 
+                                            formControlName="title"
+                                            id="jobTitle" 
+                                            placeholder="Titre du poste">
                                   </div>
                               </div>
                               <div class="col-lg-12">
                                   <div>
-                                      <label for="jobDescription" class="form-label font-15 fw-medium">Job Description</label>
+                                      <label for="jobDescription" class="form-label font-15 fw-medium">Description du Poste</label>
                                       <textarea class="form-control" id="jobDescription" rows="3"></textarea>
                                   </div>
                               </div>
                               <div class="col-lg-6">
                                   <div>
-                                      <label for="emailInput" class="form-label font-15 fw-medium">Email Address</label>
-                                      <input type="email" class="form-control" id="emailInput" placeholder="Email address">
+                                      <label for="emailInput" class="form-label font-15 fw-medium">Adresse Email</label>
+                                      <input type="email" class="form-control" id="emailInput" placeholder="Adresse email">
                                   </div>
                               </div>
                               <div class="col-lg-6">
                                   <div>
-                                      <label for="userNameInput" class="form-label font-15 fw-medium">Username</label>
-                                      <input type="text" class="form-control" id="userNameInput" placeholder="Username">
+                                      <label for="userNameInput" class="form-label font-15 fw-medium">Nom d'utilisateur</label>
+                                      <input type="text" class="form-control" id="userNameInput" placeholder="Nom d'utilisateur">
                                   </div>
                               </div>
                               <div class="col-lg-6">
                                   <div>
-                                      <label for="jobTypeInput" class="form-label font-15 fw-medium">Job Type</label>
-                                      <select class="form-select" aria-label="Default select example" id="jobTypeInput">
-                                          <option selected>Select Job Type</option>
-                                          <option value="Full Time">Full Time</option>
-                                          <option value="Part Time">Part Time</option>
-                                          <option value="Freelancer">Freelancer</option>
-                                          <option value="Internship">Internship</option>
+                                      <label for="jobTypeInput" class="form-label font-15 fw-medium">Type de Poste</label>
+                                      <select class="form-select" aria-label="Sélectionnez le type de poste" id="jobTypeInput">
+                                          <option selected>Sélectionnez le type de poste</option>
+                                          <option value="Full Time">Temps Plein</option>
+                                          <option value="Part Time">Temps Partiel</option>
+                                          <option value="Freelancer">Freelance</option>
+                                          <option value="Internship">Stage</option>
                                       </select>
                                   </div>
                               </div>
                               <div class="col-lg-6">
                                   <div>
-                                      <label for="offeredSalaryInput" class="form-label font-15 fw-medium">Offered Salary</label>
-                                      <select class="form-select" aria-label="Default select example" id="offeredSalaryInput">
-                                          <option selected>Select Offered Salary</option>
-                                          <option value="$1000">$1000</option>
-                                          <option value="$2000">$2000</option>
-                                          <option value="$3000">$3000</option>
-                                          <option value="$4000">$4000</option>
-                                          <option value="$5000">$5000</option>
+                                      <label for="offeredSalaryInput" class="form-label font-15 fw-medium">Salaire Proposé</label>
+                                      <select class="form-select" aria-label="Sélectionnez le salaire proposé" id="offeredSalaryInput">
+                                          <option selected>Sélectionnez le salaire proposé</option>
+                                          <option value="$1000">1000 DH</option>
+                                          <option value="$2000">2000 DH</option>
+                                          <option value="$3000">3000 DH</option>
+                                          <option value="$4000">4000 DH</option>
+                                          <option value="$5000">5000 DH</option>
                                       </select>
                                   </div>
                               </div>
                               <div class="col-lg-6">
                                   <div>
-                                      <label for="genderInput" class="form-label font-15 fw-medium">Gender</label>
-                                      <select class="form-select" aria-label="Default select example" id="genderInput">
-                                          <option value="Male">Male</option>
-                                          <option value="Female">Female</option>
-                                          <option value="Others">Other</option>
+                                      <label for="genderInput" class="form-label font-15 fw-medium">Sexe</label>
+                                      <select class="form-select" aria-label="Sélectionnez le sexe" id="genderInput">
+                                          <option value="Male">Homme</option>
+                                          <option value="Female">Femme</option>
+                                      
                                       </select>
                                   </div>
                               </div>
                               <div class="col-lg-6">
                                   <div>
-                                      <label for="experienceInput" class="form-label font-15 fw-medium">Experience</label>
-                                      <input type="text" class="form-control" id="experienceInput" placeholder="Experience">
+                                      <label for="experienceInput" class="form-label font-15 fw-medium">Expérience</label>
+                                      <input type="text" class="form-control" id="experienceInput" placeholder="Expérience">
                                   </div>
                               </div>
                               <div class="col-lg-12">
                                   <div>
-                                      <label for="deadlineDateInput" class="form-label font-15 fw-medium">Application Deadline Date</label>
-                                      <input type="date" class="form-control" id="deadlineDateInput" placeholder="Experience">
+                                      <label for="deadlineDateInput" class="form-label font-15 fw-medium">Date Limite de Candidature</label>
+                                      <input type="date" class="form-control" id="deadlineDateInput">
                                   </div>
                               </div>
                               <div class="col-lg-12">
                                   <div>
-                                      <label for="locationInput" class="form-label font-15 fw-medium">Location</label>
-                                      <input type="text" class="form-control" id="locationInput" placeholder="Location">
+                                      <label for="locationInput" class="form-label font-15 fw-medium">Lieu</label>
+                                      <input type="text" class="form-control" id="locationInput" placeholder="Lieu">
                                   </div>
+                              </div>
+                              <div class="col-md-3"> <!-- Equivalent to colspan="1" in mat-grid-tile -->
+                                <div class="form-group">
+                                  <!-- Hidden file input -->
+                                  <input
+                                    type="file"
+                                    class="form-control-file d-none"
+                                    id="fileUpload"
+                                    accept=".png, .jpg, .jpeg, .pdf"
+                                    (change)="onFileSelected($event)"
+                                    required
+                                    #fileUpload>
+                                    
+                                  <!-- Input group to display the file name and trigger the file input -->
+                                  <div class="input-group">
+                                 <!--    <input type="text" class="form-control" 
+                                           readonly 
+                                           [value]="fileName.length > 0 ? 'Documents chargés' : 'Aucun Document'"> -->
+                                    <div class="input-group-append">
+                                      <button class="btn btn-primary" type="button" (click)="fileUpload.click()">
+                                        <i class="fas fa-paperclip"></i> <!-- Icon (use FontAwesome or Bootstrap icons) -->
+                                      </button>
+                                    </div>
+                                  </div>
+                              
+                                  <!-- Validation error message -->
+                                  <!-- <div class="invalid-feedback d-block" *ngIf="thirdFormGroup.get('files').invalid && thirdFormGroup.get('files').touched">
+                                    Merci de sélectionner un document
+                                  </div> -->
+                                </div>
                               </div>
                               <div class="col-lg-12 text-end">
-                                  <button type="button" class="btn btn-secondary">Submit</button>
+                                  <button type="submit" class="btn btn-secondary">Soumettre</button>
                               </div>
                           </div>
                       </form>
